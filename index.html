@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF8"> </meta>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+<script src="jssor/js/jssor.slider.mini.js"> </script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
+
+<script>
+$(document).ready(function(){
+	$("#rubrik").click(function(){
+		$(this).toggle(1000);
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<h1 id="rubrik"> Välkommen till denna sida! </h1>
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+    <!-- Slides Container -->
+    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+        <div><img u="image" src="img/1.jpg" /></div>
+        <div><img u="image" src="img/2.jpg" /></div>
+        <div><img u="image" src="img/3.png" /></div>
+        <div><img u="image" src="img/4.jpg" /></div>
+    </div>
+</div>
+
+</body>
+
+</html>
